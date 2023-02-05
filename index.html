@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
-    <title>My Portfolio</title>
+    <title>Ej Sinfuego</title>
 <style>
     .name {
         font-family: 'Kanit', sans-serif;
@@ -39,10 +39,9 @@
     }
 
     #mePic {
-      width: 449px;
-      height: 600px;
-      opacity: 80%;
-      background-color: white;
+      width: 600px;
+      height: 590px;
+      opacity: 90%;
       border-radius: 5%;
     }
 
@@ -50,32 +49,44 @@
       font-family: 'Oswald', sans-serif;
       font-weight: 200;
     }
+    .title {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+    }
+    .contents{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+    }
+    #projects, #servicesPage, #workExperience{
+      background-color:rgba(108, 122, 137, 50%);
+    }
+
 </style>
 </head>
-<body data-bs-theme="light">
+<body data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="col-1">
+          </div>
+          <div class="col-5">
+            <a class="navbar-brand name" href="#">EJ</a>
+         </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="col-1">
-            </div>
-            <div class="col-5">
-                <a class="navbar-brand name" href="#">EJ</a>
-            </div>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item col-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" id="homeLink" href="#" >Home</a>
               </li>
               <li class="nav-item col-3">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" id="services" href="#">Services</a>
               </li>
               <li class="nav-item col-3">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link"  id="projectLink" href="#">Projects</a>
               </li>
               <li class="nav-item col-5">
-                <a class="nav-link" href="#">Work Experience</a>
+                <a class="nav-link" id ="xpLink" href="#">Work Experience</a>
               </li>
               <li class="nav-item col-5">
                 <a class="nav-link" id="colorMode" href="#">Dark Mode: Off</a>
@@ -84,26 +95,208 @@
           </div>
         </div>
       </nav>
-<div class="container overflow-hidden">
-  <div class="row gy-5">
-        <div class="col-5">
-          <div class="z-1 position-absolute p-5 rounded-3"><img src="me.png" id="mePic" alt="picture of me"></div>
+<div class="container section" hidden id="projects">
+  <div class="row gy-3 container">
+    <div class="col-12">
+    </div>
+    <div class="col-12">
+      <p class="text-center fs-1 title">Projects</p>
+    </div>
+    <div class="col-12">
+    </div>
+    <div class="col-12">
+    </div>
+    <div class="col-5">
+      <p class="text-start contents fs-4">Information Management System</p>
+    </div>
+    <div class="col-12">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="col-3">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="php.png" class="d-block w-100" alt="phpProject">
+          </div>
+          <div class="carousel-item">
+            <img src="Untitled.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="phpProject.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-12">
+      <p class="text-start fs-6">This is a management system that can create, read, update, and delete data. I have used PHP, MySQL, Javascript, Bootstrap, HTML, and CSS. </p>
+    </div>
+
+    <div class="col-12">
+      <p class="text-start fs-3 title">Python Alien Invasion Game</p>
+    </div>
+    <div class="col-12">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="game.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="game1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="game1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-12">
+      <p class="text-start fs-6">A game created using pygame; A python library.</p>
+    </div>
+
+    <div class="col-12">
+      <p class="text-start fs-3 title">File Sorter</p>
+    </div>
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+      <img src="fileSorter.png" class="img-fluid" alt="fileSorter">
+    </div>
+    <div class="col-4">
+    </div>
+    <div class="col-12">
+      <p class="text-start fs-6">A desktop application created using VB.Net to sort files. The user needs to choose directory first then type in the files that have similar names or same file extension. Click the sort button and it will create a new folder where the files with same type will be stored in.</p>
+    </div>
+    </div>
+</div>
+
+<div class="container section" hidden id="servicesPage">
+    <div class="row gy-3 container">
+      <div class="col-12">
+      </div>
+      <div class="col-12">
+        <p class="text-center fs-1 title">Services</p>
+      </div>
+      <div class="row gx-3">
+      <div class="col-1"></div>
+      <div class="col">
+        <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-header contents">Web Development</div>
+          <div class="card-body">
+            <p class="card-text fs-7">PHP, HTML, CSS, and JS Frameworks.</p>
+          </div>
+        </div>
+      </div>
+        
+        <div class="col">
+        <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header contents">Graphic Designs</div>
+          <div class="card-body">
+            <p class="card-text fs-7">I do vector arts and posters. Click <a href="https://www.behance.net/edzeljsinfueg">here</a> to check my works.
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header contents">Programming Services</div>
+            <div class="card-body">
+              <p class="card-text fs-7">Python, Java, VB.Net, Javascript, PHP, C++ and C#</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3">
+        <div class="col-1"></div>
+      <div class="col">
+        <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-header contents">School Works</div>
+            <div class="card-body">
+            <p class="card-text fs-7">Essay, Reflection Paper, Movie Analysis, and etc.
+          </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header contents">Film Works</div>
+            <div class="card-body">
+              <p class="card-text fs-7">Trimming, Cuts, Color Grading, and Basic VFXs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header contents">Computer Software Installations</div>
+              <div class="card-body">
+              <p class="card-text fs-7">Microsoft Offices, OS Reformat, OS Troubleshooting 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+</div>
+
+<div class="container section" hidden id="workExperience">
+  <div class="row gy-3 container">
+    <div class="col-12">
+      <p class="text-start title fs-2">Things I did in the past</p>
+    </div>
+    <div class="col-12">
+      <p class="text-start">I have spent 1 year and 6 months working in BPO. I have been a customer service representative in 3 BPO companies. 'Twas a great experience.</p>
+    </div>
+</div>
+</div>
+<div class="container overflow-hidden home section" id="home">
+  <div class="row gy-5">
+        
+        <div class="col-12"></div>
+        <div class="col-12">
+         
+        </div>
+        <div class="col-1">
 
         </div>
-        <div class="col-5"></div>
+        <div class="col-5">
+          <img src="FINAL.png" id="mePic" class="img-fluid" alt="picture of me">
+        </div>
         <div class="col-3">
           <p class=" text-end fs-1" id="name">Hi, I'm Ej Sinfuego, <br>web developer.</p>
-        <p class="text-end fs-3" id="task">&nbsp;I create custom website for your business needs.</p>
+          <p class="text-end fs-3" id="task">&nbsp;I create custom website for your business needs.</p>
+          <p>You can reach me out at <a href="#">edzeljohnsinfuego@gmail.com</a></p>
         </div>
+       
     </div>
-    <div clas="container">
-      <div class="col">
-
-      </div>
-      <div class="col">
-        
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-12">
+        </div>
+        <div class="col-12">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col-3">
+          
+        </div>
+        <div class="col-2">
+        </div>
       </div>
     </div>
 </div>
@@ -114,6 +307,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
+      $(".section").addClass("rounded")
         $("#colorMode").click(function(){
             if($("body").attr("data-bs-theme") == "dark"){
                 $("body").removeAttr("data-bs-theme")
@@ -123,6 +317,39 @@
                 $("#colorMode").html("Dark Mode: On")
             }
         });
+        $("#projectLink").click(function(){
+          if($("#projects").attr('hidden')){
+           $("#projects").removeAttr('hidden')
+           $(".section:not(#projects)").attr('hidden', 'true')
+          }else{
+
+          }
+       });
+       
+       $("#homeLink").click(function(){
+        if($("#home").attr('hidden', 'true')){
+         $("#home").removeAttr('hidden')
+         $(".section:not(#home)").attr('hidden', 'true')
+        }
+      });
+
+      $('#services').click(function(){
+        if($("#servicesPage").attr('hidden', 'true')){
+          $("#servicesPage").removeAttr('hidden')
+          $('.section:not(#servicesPage)').attr('hidden', 'true')
+        }else {
+
+        }
+      });
+
+      $("#xpLink").click(function(){
+        if($("#workExperience").attr('hidden', 'true')){
+          $("#workExperience").removeAttr('hidden')
+          $('.section:not(#workExperience)').attr('hidden', 'true')
+        }else{
+
+        }
+      });
     });
 </script>
 </html>
